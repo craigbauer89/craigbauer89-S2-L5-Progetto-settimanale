@@ -1,0 +1,551 @@
+/* IMPOSTAZIONI GENERALI */
+
+body {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8;
+    text-align: center;
+}
+
+h1,h2,h3,h4 {
+    line-height: 1;
+}
+
+h1{
+    font-size: 4rem;  
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem; 
+}
+
+h4 {
+    font-size: 2rem; 
+}
+
+input[type=submit]  {
+    background-image: linear-gradient(to right,#6cc1e2, #392f7a );
+    width: 55%;
+    color: white;   
+    border: none;
+    font-size: 1.9rem;
+    text-shadow: 1px 1px 5px black;
+}
+
+/* HEADER */
+
+header {
+    box-shadow: 0 3px 15px lightgrey;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+nav li a {
+    text-decoration: none;
+    color: grey;
+}
+
+nav li a:hover {
+    color: #e42424;
+    text-decoration: underline;
+}
+
+nav li a:active {
+    color: white;
+    background-image: linear-gradient(to right,#6cc1e2, #392f7a );
+    padding: 2.5% 2.5% 2.5% 0;
+    text-shadow: 1px 1px 5px black;
+    text-decoration: none;
+    
+}
+
+#register {
+    color: white;
+    background-image: linear-gradient(to right,#6cc1e2, #392f7a );
+    padding: 2.5% 2.5% 2.5% 0;
+    text-shadow: 1px 1px 5px black;
+    text-decoration: none;
+}
+
+nav ul {
+    text-align: left;
+}
+
+#menuMobile .lni {
+    font-size: 2rem;
+    color: #e42424; 
+}
+
+input#menuButton {
+    display: none;
+}
+
+input#menuButton:checked ~ nav {
+    height: 200px;
+    
+} 
+
+/* MAIN */
+
+.banner {
+    padding: 5%;
+    color: white;
+    background-size: 100% 100%;
+    background-image: url(../images/banner.jpg);
+    object-fit: cover;
+    text-align: left;
+    text-shadow: 1px 1px 5px black;
+    
+}
+
+.banner h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.banner input {
+    border: 5px solid lightgrey;
+}
+
+@keyframes button {
+    from {transform: translateX(0);}
+    30% {
+        border: 5px solid lightgrey;
+    }
+    60% {
+        border: 5px solid darkgrey;
+    }
+    to {border: 5px solid black;
+    }
+}
+
+#info {
+    animation: button 5s infinite;
+}
+
+.perche {
+    width: 90%;
+    margin: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+section {
+    margin-bottom: 30%;
+}
+
+section h3  {
+    width: 86%;
+    margin: 7%;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+section h2  {
+    width: 86%;
+    margin: 7%;
+    margin-bottom: 5%;
+}
+
+section p  {
+    width: 96%;
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
+section .lni {
+    font-size: 4rem;
+    color: #e42424;
+    
+}
+
+.centro {
+    color: white;
+    background-color: #0c0633;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.centro h2 {
+    padding: 5%;
+}
+
+.centro p {
+    padding: 2.5%;
+}
+
+aside div img {
+    width: 80%;
+    margin: 10% 2.5%;
+}
+
+aside{
+    margin-bottom: 10%;
+}
+
+aside h2{
+    padding: 5%;
+
+}
+
+aside p{
+    padding: 2.5%;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(238, 238, 238);
+    text-align: left;
+    padding: 5%;
+    padding-bottom: 0;
+    
+}
+
+footer div, h4, p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer input[type=text] {
+    width: 100%;
+    height: 45px;
+    /* text-align: center; */
+    border: 1px solid black;
+}
+
+footer input[type=submit] {
+    width: 100.6%;
+    height: 45px;
+    /* text-align: center; */
+    border: 1px solid black;
+}
+
+footer .lni {
+    font-size: 3rem;
+    color: #e42424;
+    
+}
+
+/* footer .lastnote {
+    margin: 5%
+    
+} */
+
+.lastnote  {
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* PAGINA CONTATTI */
+
+.contatti {
+
+    margin-top: 10%;
+    
+}
+
+.detagli {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.detagli div input{
+    margin-top: 5%;
+}
+
+
+.sede h3{
+    margin: 2.5%;
+    margin-bottom: 0;
+}
+
+.sede p{
+    margin: 2.5%;
+}
+
+#nome, #email  {
+    width: 80%;
+    height: 25px;
+    border: 1px solid grey;
+    font-style: italic;
+    margin-bottom: 2.5%;
+}
+
+#note {
+    width: 80%;
+    height: 50px;
+    font-style: italic;
+    margin-top: 2.5%;
+}
+
+/* PAGINA CHI SIAMA */
+
+.top {
+    margin-top: 10%;
+}
+
+.chisiamo  {
+    margin: 5%;
+    margin-top: 10%;
+}
+
+.top  {
+    margin: 5%;
+}
+
+.photocontainer  {
+    margin: 5%;
+}
+
+.photocontainer div img {
+    width: 100%;
+}
+
+.tablearea {
+    margin-bottom: 10%;
+    text-align: left;
+    vertical-align: text-top;
+    width: 100%;
+}
+
+.tablearea h3{
+    margin: 2.5%;
+    
+    text-align: center;
+}
+.table {
+    width: 100%;
+}
+
+.table > div {
+    display: grid;
+    grid-template-columns: 50% 50%;  
+}
+.table > div > div {
+    background-color: #d2dce7;
+}
+
+.table .secondgrid > div {
+    background-color: white;
+}
+
+.table > div > div:nth-child(2n+1) {
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
+    }
+
+    .table > div > div:nth-child(2n+1) p:nth-child(2) {
+        display: none;
+    }
+
+    .desktopview {
+        display:none;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+    /* GENERALI */
+
+    h1,h2,h3,h4 {
+        line-height: 1.1;
+        
+    }
+    
+    /* HEADER */
+
+    #menuMobile {
+        display: none;
+    }
+    
+    header nav ul {
+        margin-right: 2em;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        margin: 0 0 0 1em;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        color: grey;
+    }
+
+    nav li a:active {
+        padding: 15%;
+    }
+
+    /* MAIN */
+
+    input[type=submit]  {
+        width: 25%;
+        
+    }
+
+    .perche {
+        width: 70%;
+        margin: 0 15%;
+        margin-top: 10%;
+    }
+
+    section { 
+        display:flex;
+        justify-content: space-evenly;
+        width: 85%;
+        margin: 0 7.5%;
+    }
+
+    section div {
+        width: 100%;
+    }
+
+    aside { 
+        display:flex;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        width: 85%;
+        margin: 0 7.5%;
+    }
+
+    aside div {
+        width: 100%;
+    }
+
+    aside h3 i .lni {
+        font-size: 4rem;
+        color: #e42424;
+        
+    }
+
+    .footer { 
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    .footer div {
+        width: 100%;
+        padding: 0 2.5%;
+    }
+
+    .footer h4 {
+        margin-bottom: 5%;
+    }
+   
+    .footer i {
+        font-size: 2.5rem;
+    }
+
+
+    /* PAGINA CHI SIAMO */
+
+    .photocontainer {
+        display:flex;
+        justify-content: space-between;
+        width: 90;
+        margin: 5%;
+
+    }
+
+    .photocontainer div {
+        width: 100%;
+        
+    }
+
+    .photocontainer div img {
+        width: 90%;
+    }
+
+    .desktopview {
+        text-align: center;
+        width:100%;
+        display:grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        font-weight: bold;
+        background-color: #597aa0;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    .table > div {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        text-align: center;
+    }
+
+    .table > div > div:nth-child(2n+1) {
+        display: none;
+    }
+
+    /* PAGINA CONTATTI */
+
+    .contattidesktop { 
+        display:flex;
+        justify-content: space-evenly;
+        align-content: flex-start;
+    }
+
+    .contattidesktop div {
+        width: 100%;
+        
+    }
+
+   
+}
+
+
+ @media screen and (min-width: 1024px) {
+    
+    
+    /* MAIN */
+
+    aside {
+        width: 50%;
+        margin: 0 25%;
+
+    }
+
+    input[type=submit]  {
+        width: 15%;
+        
+    }
+    
+    /* CHI SIAMO */
+    
+    .tablearea {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    .lastnote  {
+
+        width: 80%;
+        margin: 0 10%;
+    }
+
+ }
